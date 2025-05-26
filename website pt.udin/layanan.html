@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>layanan</title>
+    <link rel="stylesheet" href="layanan.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="navbar-brand">
+            <a href="#">pt.udin(persero)tbk</a>
+        </div>
+        <div class="navbar-toggle" id="navbarToggle">
+            <i class="fas fa-bars"></i>
+        </div>
+        <ul class="navbar-menu" id="navbarMenu">
+            <li><a href="beranda.html">Beranda</a></li>
+            <li><a href="projek.html">projek</a></li>
+            <li><a href="media.html">media</a></li>
+            <li><a href="layanan.html" class="active">layanan</a></li>
+        </ul>
+    </nav>
+
+    <main class="help-container">
+        <section class="faq-section">
+            <h2>Pertanyaan Umum (FAQ)</h2>
+
+            <div class="faq-item">
+                <h3 class="faq-question">Bagaimana cara mengubah profil saya? <i class="fas fa-chevron-down toggle-icon"></i></h3>
+                <div class="faq-answer">
+                    <p>Untuk mengubah profil Anda, silakan masuk ke akun Anda, lalu klik ikon profil di pojok kanan atas. Di sana Anda akan menemukan opsi untuk mengedit informasi pribadi, foto profil, dan preferensi lainnya.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <h3 class="faq-question">Apa yang harus saya lakukan jika lupa kata sandi? <i class="fas fa-chevron-down toggle-icon"></i></h3>
+                <div class="faq-answer">
+                    <p>Jika Anda lupa kata sandi, kunjungi halaman login dan klik tautan "Lupa Kata Sandi?". Ikuti petunjuk untuk mengatur ulang kata sandi Anda melalui email yang terdaftar.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <h3 class="faq-question">Bagaimana cara menghubungi dukungan pelanggan? <i class="fas fa-chevron-down toggle-icon"></i></h3>
+                <div class="faq-answer">
+                    <p>Anda dapat menghubungi dukungan pelanggan kami melalui formulir kontak di bawah ini, atau melalui email ke <a href="mailto:support@aplikasianda.com">support@aplikasianda.com</a>. Kami akan berusaha membalas secepatnya.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <h3 class="faq-question">Apakah aplikasi ini tersedia di perangkat seluler? <i class="fas fa-chevron-down toggle-icon"></i></h3>
+                <div class="faq-answer">
+                    <p>Ya, aplikasi kami sepenuhnya responsif dan dapat diakses dari perangkat seluler mana pun melalui browser web Anda. Kami juga sedang dalam proses pengembangan aplikasi seluler khusus untuk iOS dan Android.</p>
+                </div>
+            </div>
+        </section>
+
+        <hr class="separator">
+
+        <section class="contact-section">
+            <h2>Hubungi Kami</h2>
+            <p>Tidak menemukan jawaban yang Anda cari? Silakan isi formulir di bawah ini dan kami akan segera menghubungi Anda.</p>
+            <form action="#" method="POST" class="contact-form">
+                <div class="form-group">
+                    <label for="nama">Nama Lengkap:</label>
+                    <input type="text" id="nama" name="nama" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Alamat Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="subjek">Subjek:</label>
+                    <input type="text" id="subjek" name="subjek" required>
+                </div>
+                <div class="form-group">
+                    <label for="pesan">Pesan Anda:</label>
+                    <textarea id="pesan" name="pesan" rows="6" required></textarea>
+                </div>
+                <button type="submit" class="submit-button">Kirim Pesan</button>
+            </form>
+        </section>
+    </main>
+
+    <script>
+        // JavaScript sederhana untuk toggle menu di perangkat mobile
+        const navbarToggle = document.getElementById('navbarToggle');
+        const navbarMenu = document.getElementById('navbarMenu');
+
+        navbarToggle.addEventListener('click', () => {
+            navbarMenu.classList.toggle('active');
+        });
+    </script>
+
+</body>
+</html>

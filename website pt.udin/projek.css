@@ -1,0 +1,425 @@
+/* Reset CSS Dasar */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Gaya Navbar */
+.navbar {
+    background-color: #333;
+    color: white;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky; /* Navbar tetap di atas saat digulir */
+    top: 0;
+    width: 100%;
+    z-index: 1000; /* Pastikan navbar di atas konten lain */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+.navbar-brand a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.8em;
+    font-weight: bold;
+}
+
+.navbar-menu {
+    list-style: none;
+    display: flex; /* Item menu sejajar horizontal */
+}
+
+.navbar-menu li {
+    margin-left: 25px;
+}
+
+.navbar-menu a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.1em;
+    padding: 5px 0;
+    transition: color 0.3s ease;
+}
+
+.navbar-menu a:hover,
+.navbar-menu a.active {
+    color: #007bff; /* Warna hover dan aktif */
+}
+
+/* Tombol Toggle untuk Mobile */
+.navbar-toggle {
+    display: none; /* Sembunyikan secara default di desktop */
+    font-size: 1.8em;
+    cursor: pointer;
+}
+
+/* Konten Utama (contoh) */
+.content {
+    padding: 40px 20px;
+    max-width: 960px;
+    margin: 20px auto;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.content h1 {
+    margin-bottom: 20px;
+    color: #007bff;
+}
+
+.content img {
+ margin: 10px; 
+ height: 500px; 
+}
+
+/* Responsivitas */
+@media (max-width: 768px) {
+    .navbar {
+        flex-wrap: wrap; /* Izinkan wrap jika terlalu kecil */
+        padding: 10px 15px;
+    }
+
+    .navbar-toggle {
+        display: block; /* Tampilkan tombol toggle di mobile */
+    }
+
+    .navbar-menu {
+        flex-direction: column; /* Item menu menjadi vertikal */
+        width: 100%;
+        display: none; /* Sembunyikan menu secara default di mobile */
+        text-align: center;
+        margin-top: 15px;
+        background-color: #444; /* Latar belakang menu yang terbuka */
+    }
+
+    .navbar-menu.active {
+        display: flex; /* Tampilkan menu saat kelas 'active' ada */
+    }
+
+    .navbar-menu li {
+        margin: 0; /* Hapus margin horizontal */
+        padding: 10px 0;
+        border-top: 1px solid rgba(255,255,255,0.1);
+    }
+
+    .navbar-menu li:first-child {
+        border-top: none; /* Hapus border top untuk item pertama */
+    }
+
+    .navbar-menu a {
+        padding: 10px 0;
+        display: block; /* Agar link mengisi seluruh lebar item */
+    }
+}
+
+/* Header Halaman Bantuan */
+.help-header {
+    background-color: #007bff;
+    color: white;
+    text-align: center;
+    padding: 60px 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.help-header h1 {
+    font-size: 2.8em;
+    margin-bottom: 10px;
+}
+
+.help-header p {
+    font-size: 1.2em;
+}
+
+/* Kontainer Utama Bantuan */
+.help-container {
+    max-width: 900px;
+    margin: 20px auto;
+    padding: 30px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+/* Bagian FAQ */
+.faq-section h2,
+.contact-section h2 {
+    font-size: 2em;
+    color: #007bff;
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+.faq-item {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    overflow: hidden; /* Penting untuk transisi tinggi */
+}
+
+.faq-question {
+    background-color: #f0f0f0;
+    padding: 15px 20px;
+    font-size: 1.1em;
+    font-weight: bold;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: background-color 0.3s ease;
+}
+
+.faq-question:hover {
+    background-color: #e2e2e2;
+}
+
+.faq-answer {
+    padding: 0 20px; /* Padding samping tetap */
+    background-color: #fff;
+    max-height: 0; /* Sembunyikan secara default */
+    overflow: hidden;
+    transition: max-height 0.3s ease-out, padding 0.3s ease-out; /* Transisi untuk tinggi dan padding */
+}
+
+.faq-answer p {
+    padding: 15px 0; /* Padding vertikal saat terbuka */
+    border-top: 1px solid #eee;
+}
+
+.faq-answer a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.faq-answer a:hover {
+    text-decoration: underline;
+}
+
+.toggle-icon {
+    transition: transform 0.3s ease;
+}
+
+.faq-question .fa-chevron-up {
+    transform: rotate(180deg);
+}
+
+/* Separator */
+.separator {
+    border: 0;
+    height: 1px;
+    background-color: #eee;
+    margin: 40px 0;
+}
+
+/* Bagian Kontak */
+.contact-section p {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 1.1em;
+}
+
+.contact-form .form-group {
+    margin-bottom: 20px;
+}
+
+.contact-form label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+    box-shadow: inset 0 1px 2px rgba(0,0,0,0.05);
+}
+
+.contact-form textarea {
+    resize: vertical; /* Izinkan textarea diubah ukurannya secara vertikal */
+}
+
+.submit-button {
+    display: block;
+    width: 100%;
+    padding: 15px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.submit-button:hover {
+    background-color: #0056b3;
+}
+
+/* Reset CSS Dasar */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f0f2f5;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Header Halaman Proyek */
+.project-header {
+    background-color: #4CAF50; /* Warna hijau menarik */
+    color: white;
+    text-align: center;
+    padding: 60px 20px;
+    margin-bottom: 30px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.project-header h1 {
+    font-size: 3em;
+    margin-bottom: 10px;
+}
+
+.project-header p {
+    font-size: 1.3em;
+    opacity: 0.9;
+}
+
+/* Kontainer Utama Proyek */
+.project-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Grid Proyek */
+.project-grid {
+    display: grid;
+    /* Membuat kolom responsif: minimal 300px, maksimal mengisi ruang */
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px; /* Jarak antar kartu proyek */
+    padding-bottom: 50px;
+}
+
+.project-card {
+    background-color: #fff;
+    border-radius: 10px;
+    overflow: hidden; /* Pastikan gambar tidak meluap */
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    display: flex;
+    flex-direction: column;
+}
+
+.project-card:hover {
+    transform: translateY(-8px); /* Efek naik saat dihover */
+    box-shadow: 0 8px 25px rgba(0,0,0,0.2);
+}
+
+.project-image {
+    width: 100%;
+    height: 200px; /* Tinggi gambar yang konsisten */
+    object-fit: cover; /* Pastikan gambar mengisi area tanpa terdistorsi */
+    display: block;
+}
+
+.project-info {
+    padding: 20px;
+    flex-grow: 1; /* Memastikan info mengisi sisa ruang di kartu */
+    display: flex;
+    flex-direction: column;
+}
+
+.project-info h3 {
+    font-size: 1.6em;
+    color: #4CAF50;
+    margin-bottom: 10px;
+}
+
+.project-info p {
+    font-size: 1em;
+    color: #555;
+    margin-bottom: 20px;
+    flex-grow: 1; /* Deskripsi mengisi ruang */
+}
+
+.btn-detail {
+    display: inline-block;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 1em;
+    transition: background-color 0.3s ease;
+    align-self: flex-start; /* Tombol berada di kiri bawah */
+}
+
+.btn-detail:hover {
+    background-color: #0056b3;
+}
+
+
+/* Responsivitas */
+@media (max-width: 768px) {
+    .project-header {
+        padding: 40px 15px;
+    }
+
+    .project-header h1 {
+        font-size: 2.5em;
+    }
+
+    .project-header p {
+        font-size: 1.1em;
+    }
+
+    .project-container {
+        padding: 0 15px;
+    }
+
+    .project-grid {
+        grid-template-columns: 1fr; /* Satu kolom di layar kecil */
+        gap: 20px;
+    }
+
+    .project-card {
+        margin-bottom: 15px; /* Jarak antar kartu ketika vertikal */
+    }
+
+    .project-image {
+        height: 180px;
+    }
+
+    .project-info h3 {
+        font-size: 1.4em;
+    }
+
+    .project-info p {
+        font-size: 0.95em;
+    }
+
+    .btn-detail {
+        padding: 8px 15px;
+        font-size: 0.9em;
+    }
+}

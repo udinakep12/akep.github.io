@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>media</title>
+    <link rel="stylesheet" href="media.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="navbar-brand">
+            <a href="#">pt.udin(persero)tbk</a>
+        </div>
+        <div class="navbar-toggle" id="navbarToggle">
+            <i class="fas fa-bars"></i>
+        </div>
+        <ul class="navbar-menu" id="navbarMenu">
+            <li><a href="beranda.html">Beranda</a></li>
+            <li><a href="projek.html">projek</a></li>
+            <li><a href="media.html" class="active">media</a></li>
+            <li><a href="layanan.html">layanan</a></li>
+        </ul>
+    </nav>
+    <header class="media-header">
+        <h1>Galeri Media</h1>
+        <p>Jelajahi koleksi foto dan video kami yang menakjubkan.</p>
+    </header>
+
+    <main class="media-container">
+        <section class="gallery-section">
+            <h2>Foto-Foto Terbaru</h2>
+            <div class="image-gallery">
+                <div class="gallery-item">
+                    <img src="foto2.png" alt="Galeri Gambar 1">
+                    <div class="overlay">Pemandangan Alam</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="foto1.jpeg">
+                    <div class="overlay">Arsitektur Modern</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="foto3.jpeg" alt="Galeri Gambar 3">
+                    <div class="overlay">Seni Abstrak</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="foto4.jpeg" alt="Galeri Gambar 4">
+                    <div class="overlay">Kuliner Lezat</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="foto5.jpeg" alt="Galeri Gambar 5">
+                    <div class="overlay">Gaya Hidup</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="foto6.jpeg" alt="Galeri Gambar 6">
+                    <div class="overlay">Teknologi Inovatif</div>
+                </div>
+            </div>
+        </section>
+
+        <hr class="separator">
+
+        <section class="video-section">
+            <h2>Video Pilihan</h2>
+            <div class="video-grid">
+                <div class="video-item">
+                    <iframe src="video1.mp4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <div class="video-caption">keseruan kerja</div>
+                </div>
+                <div class="video-item">
+                    <iframe src="video2.mp4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <div class="video-caption">Perjalanan Inspiratif</div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script>
+        // JavaScript sederhana untuk toggle menu di perangkat mobile
+        const navbarToggle = document.getElementById('navbarToggle');
+        const navbarMenu = document.getElementById('navbarMenu');
+
+        navbarToggle.addEventListener('click', () => {
+            navbarMenu.classList.toggle('active');
+        });
+    </script>
+
+</body>
+</html>

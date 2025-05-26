@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>beranda</title>
+    <link rel="stylesheet" href="beranda.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="navbar-brand">
+            <a href="#">pt.udin(persero)tbk</a>
+        </div>
+        <div class="navbar-toggle" id="navbarToggle">
+            <i class="fas fa-bars"></i>
+        </div>
+        <ul class="navbar-menu" id="navbarMenu">
+            <li><a href="beranda.html" class="active">Beranda</a></li>
+            <li><a href="projek.html">projek</a></li>
+            <li><a href="media.html">media</a></li>
+            <li><a href="layanan.html">layanan</a></li>
+        </ul>
+    </nav>
+        <section class="hero-section">
+        <div class="hero-content">
+            <h1>Sederhanakan Hidup Anda dengan Aplikasi Kami</h1>
+            <p>Solusi cerdas untuk mengelola tugas harian, berkomunikasi, dan mencapai tujuan Anda dengan mudah.</p>
+            <div class="hero-buttons">
+                <a href="#" class="btn-primary">Mulai Sekarang</a>
+                <a href="#" class="btn-secondary">Pelajari Lebih Lanjut</a>
+            </div>
+        </div>
+        <div class="hero-image">
+            <img src="foto2.png">
+        </div>
+    </section>
+
+    <section class="features-section">
+        <h2>Fitur Utama Kami</h2>
+        <div class="features-grid">
+            <div class="feature-item">
+                <i class="fas fa-tasks icon"></i>
+                <h3>Manajemen Tugas</h3>
+                <p>Kelola daftar tugas Anda dengan efisien dan atur prioritas dengan mudah.</p>
+            </div>
+            <div class="feature-item">
+                <i class="fas fa-comments icon"></i>
+                <h3>Komunikasi Instan</h3>
+                <p>Berinteraksi dengan tim atau teman melalui fitur chat dan notifikasi real-time.</p>
+            </div>
+            <div class="feature-item">
+                <i class="fas fa-chart-line icon"></i>
+                <h3>Pelacakan Kemajuan</h3>
+                <p>Pantau progres proyek atau tujuan pribadi Anda dengan dasbor yang intuitif.</p>
+            </div>
+            <div class="feature-item">
+                <i class="fas fa-cloud icon"></i>
+                <h3>Penyimpanan Aman</h3>
+                <p>Simpan data penting Anda di cloud dengan keamanan terbaik.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="testimonials-section">
+        <h2>Apa Kata Pengguna Kami</h2>
+        <div class="testimonial-grid">
+            <div class="testimonial-card">
+                <p>"Aplikasi ini benar-benar mengubah cara saya bekerja. Sangat intuitif dan efisien!"</p>
+                <div class="client-info">
+                    <img src="foto2.png" alt="Profil Klien 1" class="client-avatar">
+                    <span>Cica L.</span>
+                </div>
+            </div>
+            <div class="testimonial-card">
+                <p>"Dukungan pelanggan yang luar biasa dan fitur-fitur yang terus berkembang. Sangat direkomendasikan!"</p>
+                <div class="client-info">
+                    <img src="foto2.png" alt="Profil Klien 2" class="client-avatar">
+                    <span>Sisi I.</span>
+                </div>
+            </div>
+            <div class="testimonial-card">
+                <p>"Membuat kolaborasi tim jauh lebih mudah. Tidak bisa membayangkan bekerja tanpanya sekarang."</p>
+                <div class="client-info">
+                    <img src="foto2.png" alt="Profil Klien 3" class="client-avatar">
+                    <span>Opin O.</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta-section">
+        <h2>Siap Untuk Perubahan Positif?</h2>
+        <p>Bergabunglah dengan ribuan pengguna yang telah merasakan manfaat aplikasi kami.</p>
+        <a href="#" class="btn-primary">Daftar Gratis Sekarang!</a>
+    </section>
+
+    <footer class="main-footer">
+        <p>&copy; 2025 pt.udin(persero)tbk. Semua Hak Dilindungi.</p>
+        <div class="social-links">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+    <script>
+        // JavaScript sederhana untuk toggle menu di perangkat mobile
+        const navbarToggle = document.getElementById('navbarToggle');
+        const navbarMenu = document.getElementById('navbarMenu');
+
+        navbarToggle.addEventListener('click', () => {
+            navbarMenu.classList.toggle('active');
+        });
+    </script>
+
+</body>
+</html>

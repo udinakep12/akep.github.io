@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>projek</title>
+    <link rel="stylesheet" href="projek.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="navbar-brand">
+            <a href="#">pt.udin(persero)tbk</a>
+        </div>
+        <div class="navbar-toggle" id="navbarToggle">
+            <i class="fas fa-bars"></i>
+        </div>
+        <ul class="navbar-menu" id="navbarMenu">
+            <li><a href="beranda.html">Beranda</a></li>
+            <li><a href="projek.html" class="active">projek</a></li>
+            <li><a href="media.html">media</a></li>
+            <li><a href="layanan.html">layanan</a></li>
+        </ul>
+    </nav>
+
+    <header class="project-header">
+        <h1>Proyek-Proyek Kami</h1>
+        <p>Lihatlah beberapa karya terbaru yang telah kami selesaikan.</p>
+    </header>
+
+    <main class="project-container">
+        <section class="project-grid">
+
+            <div class="project-card">
+                <img src="foto4.jpeg" alt="Gambar Proyek 1" class="project-image">
+                <div class="project-info">
+                    <h3>Aplikasi E-commerce Responsif</h3>
+                    <p>Pengembangan aplikasi belanja online dengan fitur keranjang, pembayaran, dan manajemen produk yang responsif di berbagai perangkat.</p>
+                    <a href="#" class="btn-detail">Lihat Detail</a>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <img src="foto1.jpeg" alt="Gambar Proyek 2" class="project-image">
+                <div class="project-info">
+                    <h3>Sistem Manajemen Gudang</h3>
+                    <p>Pembuatan sistem backend dan antarmuka pengguna untuk pelacakan inventaris, pemesanan, dan optimasi logistik di gudang.</p>
+                    <a href="#" class="btn-detail">Lihat Detail</a>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <img src="foto3.jpeg" alt="Gambar Proyek 3" class="project-image">
+                <div class="project-info">
+                    <h3>Desain Ulang Website Perusahaan</h3>
+                    <p>Melakukan redesain total website korporat, berfokus pada pengalaman pengguna yang intuitif dan peningkatan branding digital.</p>
+                    <a href="#" class="btn-detail">Lihat Detail</a>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <img src="foto5.jpeg" alt="Gambar Proyek 4" class="project-image">
+                <div class="project-info">
+                    <h3>Game Edukasi Interaktif</h3>
+                    <p>Pengembangan game berbasis web untuk anak-anak dengan tujuan pendidikan, menggunakan teknologi HTML5 Canvas dan JavaScript.</p>
+                    <a href="#" class="btn-detail">Lihat Detail</a>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <img src="foto6.jpeg" alt="Gambar Proyek 5" class="project-image">
+                <div class="project-info">
+                    <h3>Aplikasi Mobile Event Organizer</h3>
+                    <p>Pembuatan aplikasi mobile (Hybrid/PWA) untuk manajemen acara, pendaftaran peserta, dan notifikasi real-time.</p>
+                    <a href="#" class="btn-detail">Lihat Detail</a>
+                </div>
+            </div>
+
+        </section>
+    </main>
+
+    <script>
+        // JavaScript sederhana untuk toggle menu di perangkat mobile
+        const navbarToggle = document.getElementById('navbarToggle');
+        const navbarMenu = document.getElementById('navbarMenu');
+
+        navbarToggle.addEventListener('click', () => {
+            navbarMenu.classList.toggle('active');
+        });
+    </script>
+
+</body>
+</html>
